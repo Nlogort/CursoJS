@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>EXERCICIO EM DOM</h1>
+<button  onclick= clicar() id="butao">não clicado</button>
+
+<script>
+    function clicar(){
+document.getElementById('butao').innerText='alterado com DOM'
+
+}
+
+</script>
+
+<style>
+    body{
+        background-color: rgb(155, 104, 155);
+        color: gold;
+        font: normal 20pt arial;
+        justify-items: center;
+    }
+
+    h1{color : white;
+    
+    }
+    button{
+    background-color: yellow;
+    border: white;
+    border-radius: 20px ;
+    height: 90px;
+    width: 200px;
+    font: bold 15pt arial;
+  
+    }
+</style>
+
+
+
+</body>
+</html>

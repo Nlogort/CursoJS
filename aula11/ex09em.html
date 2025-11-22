@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09 em HTML</title>
+</head>
+<body>
+    
+<h1>É estrangeiro?</h1>
+<input type="text" name="txtpais" id="txtpais"placeholder="nome do país">
+<input type="button" value="verificar" onclick="verificar()">
+<div id="res"></div>
+<script>
+function verificar(){
+    var pais = document.querySelector("input#txtpais").value
+    var res = document.querySelector("div#res")
+    if(pais =="Brasil"){
+        res.innerHTML = "<p>voce é um Brasileiro</p>"
+    }else{
+        res.innerHTML= `<p>voce é um estrangeiro do pais ${pais}</p>`
+    }
+
+}
+
+</script>
+</body>
+</html>

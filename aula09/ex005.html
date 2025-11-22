@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>usando dom</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    
+    <style>
+body {
+    background-color: #3b97e2;
+    color: rgb(255, 255, 255);
+    font: normal 15pt arial ;
+}
+    </style>
+
+</head>
+<body>
+    
+<h1>iniciando estudos com DOM</h1>
+<p> aqui vai o resultado</p>
+<p> Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+<div class="msg">clique em mim</div>
+
+<script>
+    //estilo de com Dom em JavaScript
+    var corpo=document.body
+    corpo.style.backgroundColor=''
+
+  //selecinando paragrafo pelos colchetes e escrevendo na janela
+
+    var p1= document.getElementsByTagName('p')[1]
+window.document.write('esta escrito assim; '+p1.innerText);
+p1.style.color='gold'
+
+/*var d = window.document.getElementById('msg')
+
+d.style.backgroundColor='green'
+d.innerText='agora o bixo vai pega kkkkk'*/
+
+var d=window.document.querySelector('div.msg')
+d.style.color='blue'
+
+
+</script>
+
+
+
+
+</body>
+</html>
